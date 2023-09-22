@@ -1,0 +1,14 @@
+h3 {
+    text-align: right;
+    color: blue;
+}
+body {
+    background-color: bisque;
+}
+span {
+    background-color: dodgerblue;
+    color: blue;
+}
+p {
+    color: brown;
+}

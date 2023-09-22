@@ -1,0 +1,18 @@
+body.main {
+    background-color: lightseagreen;
+}
+#center strong {
+    background-color: yellow;
+}
+#center {
+    text-align: center;
+}
+p {
+    text-indent: 50px;
+}
+p > em {
+    color: green;
+}
+p > strong {
+    color: red;
+}
