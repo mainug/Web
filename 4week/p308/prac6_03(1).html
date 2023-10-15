@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>document.write()</title>
+    <script>
+        function printStar() {
+            return document.write('*');
+        }
+    </script>   
+</head>
+<body>
+    <script>
+        let num = 5;
+
+        for (let i = 1; i <= num; i++) {
+            for (let j = 1; j <= i; j++) {
+                printStar();
+                if (j == i) {
+                    document.write('<br>');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

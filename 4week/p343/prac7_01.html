@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>난수</title>
+    <script>
+        function rand(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</head>
+<body>
+    <h3>난수 10 개 생성</h3>
+    <hr>
+    <script>
+        var n=[];
+        for(var i=0; i<10; i++) {
+            n[i] = rand(1, 100);
+        }
+        for(var i=0; i<10; i++) {
+            document.write(n[i] + "&nbsp");
+        }
+        document.write("<hr>");
+        var big = n[0];
+        for(var i=0; i<10; i++) {
+            if(big < n[i]) {
+                big = n[i];
+            }
+        }
+        document.write("제일 큰 수는 " + big);
+        document.write("<hr>");
+        n.sort((a, b) => a - b);
+        for(var i=0; i<10; i++) {
+            document.write(n[i] + "&nbsp");
+        }
+    </script>
+</body>
+</html>
