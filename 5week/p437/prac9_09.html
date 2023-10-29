@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function showExp(ev, msg) {
+            let div = document.querySelector("#exp")
+            div.innerHTML = msg;
+            div.style.visibility = "visible"
+            div.style.top = ev.clientY+"px"
+            div.style.left = ev.clientX+"px"
+        }
+        function hideExp() {
+            let div = document.querySelector("#exp")
+            div.style.visibility = "hidden"
+        }
+    </script>
+    <style>
+        #exp {
+            visibility: hidden;
+            position: absolute;
+            width: 200px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h3>아이템에 마우스를 올리면 설명 출력</h3>
+    <hr>
+    <p>여름방학 때 하고 싶은 것들</p>
+    <ul>
+        <li onmouseover="showExp(event, '빨간 자전거를 타고 서울 찍고 부산 찍고 목포 인천으로')" onmouseout="hideExp();">
+        자전거로 대한민국 일주</li>
+        <li onmouseover="showExp(event, '열혈강호, 드래곤볼 빨간머리 앤 등을 읽기')" onmouseout="hideExp();">
+        책 100권 읽기</li>
+    </ul>
+    <div id="exp"></div>
+</body>
+</html>

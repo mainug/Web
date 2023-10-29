@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function procKey(ev) {
+            if(ev.keyCode == 13) {
+                let exp = eval(document.querySelector("#exp").value)
+                document.querySelector("#val").value = exp
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    <p>수식을 입력하고 &lt;Enter&gt;를 입력하세요.</p>
+    <form>
+        식 <input type="text" id="exp" onkeypress="procKey(event)"> <br>
+        값 <input type="text" id="val">
+    </form>
+</body>
+</html>
