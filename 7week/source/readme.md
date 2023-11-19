@@ -62,7 +62,7 @@ if ($file) {
 
     fclose($file);
 } else {
-    echo "파일을 열 수 없습니다."
+    echo "파일을 열 수 없습니다.";
 }
 ```
 
@@ -106,6 +106,6 @@ if ($file) {
 
     fclose($file);
 } else {
-    echo "파일을 열 수 없습니다."
+    echo "파일을 열 수 없습니다.";
 }
 ```
